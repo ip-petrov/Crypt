@@ -27,6 +27,7 @@ public class Main {
         }
     }
     private static void bruteForceText(String text){                                           // метод перебора возможных вариантов "брутфорс"
+            text = text.toLowerCase();
             for (int i = 0; i < ALPHABET.length(); i++) {
             for (int j = 0; j < text.length(); j++) {
                 System.out.print(shiftingSymbolForEncrypt(text.charAt(j),i) );
